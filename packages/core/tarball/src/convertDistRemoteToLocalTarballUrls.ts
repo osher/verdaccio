@@ -1,7 +1,7 @@
 import _ from 'lodash';
 
 import { Package } from '@verdaccio/types';
-import { RequestOptions } from '@verdaccio/url';
+import type { RequestOptions } from '@verdaccio/url';
 
 import { getLocalRegistryTarballUri } from './getLocalRegistryTarballUri';
 
