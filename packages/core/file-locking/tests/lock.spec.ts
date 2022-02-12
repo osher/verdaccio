@@ -1,7 +1,12 @@
 import fs from 'fs';
 import path from 'path';
+import { dirname } from 'path';
+import { fileURLToPath } from 'url';
 
 import { lockFile, readFile, unlockFile } from '../src/index';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 interface Error {
   message: string;
